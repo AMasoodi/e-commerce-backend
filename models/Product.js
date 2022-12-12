@@ -1,4 +1,4 @@
-// import important sequelize library
+// import sequelize library
 
 const { INTEGER } = require('sequelize');
 const { Model, DataTypes } = require('sequelize');
