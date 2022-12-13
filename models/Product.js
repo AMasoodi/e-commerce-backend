@@ -4,7 +4,7 @@ const { INTEGER } = require('sequelize');
 const { Model, DataTypes } = require('sequelize');
 
 // import the database connection from config.js
-const sequelize = require('../config/connection');
+const sequelize = require('../config/connections.js');
 
 // Initialize Products model table by extending off Sequelize's Model class
 class Product extends Model {}
