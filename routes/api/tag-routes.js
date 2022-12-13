@@ -22,7 +22,7 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/:id', async (req, res) => {
-  // find tags by `id`
+  // find tag by `id`
   try {
     const tagData = await Tag.findOne({
       where: {
@@ -41,7 +41,7 @@ router.get('/:id', async (req, res) => {
   }
 });
 router.post('/', async (req, res) => {
-  // add new tag
+  // add new tags
   try {
     const newTag = await Tag.create(req.body);
     res.status(200).json(newTag)
@@ -50,7 +50,7 @@ router.post('/', async (req, res) => {
   }
 });
 router.put('/:id', async (req, res) => {
-  // update tag
+  // update tags
   try {
     const tagData = await Tag.update(req.body, {
       where: {
